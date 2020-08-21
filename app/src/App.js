@@ -7,7 +7,6 @@ import './App.css';
 
 import {carregarDados} from './metodosBase'
 import * as d3 from 'd3';
-import meuDados from './myFile.json' 
 
 function App() {
   var width, height;
@@ -112,7 +111,7 @@ function App() {
 
   return (
     <>
-      <Grid container spacing={1} className="App-header">
+      <Grid  spacing={1} className="App-header">
         <Grid item xs={12}>
           <Typography variant="h3">A participação das mulheres na tecnologia</Typography>
           <svg  ref={ref} />
