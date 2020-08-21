@@ -2,11 +2,6 @@
     "name": "Anos",
     "children":[{
         "name": "2001",
-        "children":[{
-            "name": "matriculados",
-            "value": 35537,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 3380
@@ -15,15 +10,8 @@
                     "name": "Homens",
                     "value": 7256
                 }]
-            }]
-        }]
     },{
         "name": "2002",
-        "children":[{
-            "name": "matriculados",
-            "value": 42415,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 3470
@@ -32,15 +20,8 @@
                     "name": "Homens",
                     "value": 9225
                 }]
-            }]
-        }]
     },{
         "name": "2003",
-        "children":[{
-            "name": "matriculados",
-            "value": 48064,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 3881
@@ -49,15 +30,8 @@
                     "name": "Homens",
                     "value": 11437
                 }]
-            }]
-        }]
     }, {
         "name": "2004",
-        "children":[{
-            "name": "matriculados",
-            "value": 54635,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 5216
@@ -66,15 +40,8 @@
                     "name": "Homens",
                     "value": 16574
                 }]
-            }]
-        }]
     },{
         "name": "2005",
-        "children":[{
-            "name": "matriculados",
-            "value": 62682,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6455
@@ -83,15 +50,8 @@
                     "name": "Homens",
                     "value": 21452
                 }]
-            }]
-        }]
     }, {
         "name": "2006",
-        "children":[{
-            "name": "matriculados",
-            "value": 65551,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6450
@@ -100,15 +60,8 @@
                     "name": "Homens",
                     "value": 23400
                 }]
-            }]
-        }]
     }, {
         "name": "2007",
-        "children":[{
-            "name": "matriculados",
-            "value": 70632,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6432
@@ -117,15 +70,8 @@
                     "name": "Homens",
                     "value": 26019
                 }]
-            }]
-        }]
     }, {
         "name": "2008",
-        "children":[{
-            "name": "matriculados",
-            "value": 83167,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6775
@@ -134,15 +80,8 @@
                     "name": "Homens",
                     "value": 28505
                 }]
-            }]
-        }]
     }, {
         "name": "2009",
-        "children":[{
-            "name": "matriculados",
-            "value": 90364,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 8955
@@ -151,15 +90,8 @@
                     "name": "Homens",
                     "value": 36364
                 }]
-            }]
-        }]
     }, {
         "name": "2010",
-        "children":[{
-            "name": "matriculados",
-            "value": 87357,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 7762
@@ -168,15 +100,8 @@
                     "name": "Homens",
                     "value": 34714
                 }]
-            }]
-        }]
     }, {
         "name": "2011",
-        "children":[{
-            "name": "matriculados",
-            "value": 83180,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6902
@@ -185,15 +110,8 @@
                     "name": "Homens",
                     "value": 33222
                 }]
-            }]
-        }]
     }, {
         "name": "2012",
-        "children":[{
-            "name": "matriculados",
-            "value": 81197,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 7127
@@ -202,15 +120,8 @@
                     "name": "Homens",
                     "value": 33420
                 }]
-            }]
-        }]
     }, {
         "name": "2013",
-        "children":[{
-            "name": "matriculados",
-            "value": 79094,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6448
@@ -219,15 +130,8 @@
                     "name": "Homens",
                     "value": 31940
                 }]
-            }]
-        }]
     }, {
         "name": "2014",
-        "children":[{
-            "name": "matriculados",
-            "value": 81980,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6404
@@ -236,15 +140,8 @@
                     "name": "Homens",
                     "value": 32938
                 }]
-            }]
-        }]
     }, {
         "name": "2015",
-        "children":[{
-            "name": "matriculados",
-            "value": 81749,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6638
@@ -253,15 +150,8 @@
                     "name": "Homens",
                     "value": 34828
                 }]
-            }]
-        }]
     }, {
         "name": "2016",
-        "children":[{
-            "name": "matriculados",
-            "value": 79921,
-            "children": [{
-                "name": "concluintes",
                 "children": [{
                     "name": "Mulheres",
                     "value": 6504
@@ -270,16 +160,9 @@
                     "name": "Homens",
                     "value": 35508
                 }]
-            }]
-        }]
     }, {
         "name": "2017",
         "children":[{
-            "name": "matriculados",
-            "value": 78615,
-            "children": [{
-                "name": "concluintes",
-                "children": [{
                     "name": "Mulheres",
                     "value": 6175
                 },
@@ -288,6 +171,4 @@
                     "value": 33803
                 }]
             }]
-        }]
-    }]
 }

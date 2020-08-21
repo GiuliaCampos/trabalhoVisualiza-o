@@ -11,8 +11,6 @@ import meuDados from './myFile.json'
 
 function App() {
   var width, height;
-  width = 800;
-  height = 800;
   const ref = useRef();
   const [sbcData, setSbcData] = useState([]);
 
@@ -21,14 +19,12 @@ function App() {
       // const aux = await carregarDados();
       // setSbcData(aux);
 
-      d3.json(meuDados), function(data){
-
-      
+      let data = require('./myFile3.json')
 
       var partition = data => {
         const root = d3.hierarchy(data)
             .sum(d => d.value)
-            .sort((a, b) => b.height - a.height || b.value - a.value);  
+            // .sort((a, b) => b.height - a.height || b.value - a.value);  
         return d3.partition()
             .size([height, (root.height + 1) * width / 3])
           (root);
@@ -38,14 +34,14 @@ function App() {
 
       var format = d3.format(",d")
 
-      width = 975
+      width = 1200
 
       height = 1200
 
       const root = partition(data);
       let focus = root;
-
-      const svg = d3.create("svg")
+      
+      const svg = d3.select(ref.current)
           .attr("viewBox", [0, 0, width, height])
           .style("font", "10px sans-serif");
 
@@ -109,7 +105,6 @@ function App() {
       function labelVisible(d) {
         return d.y1 <= width && d.y0 >= 0 && d.x1 - d.x0 > 16;
       }
-      })
     }
     loadData()
   }, []);

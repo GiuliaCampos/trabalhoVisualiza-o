@@ -1,9 +1,7 @@
 {
     "name": "Anos",
     "children":[{
-        "name": "2001",
-        "children":[{
-            "name": "matriculados",
+        "name": "2001 Matriculados",
             "value": 35537,
             "children": [{
                 "name": "concluintes",
@@ -16,11 +14,9 @@
                     "value": 7256
                 }]
             }]
-        }]
+        
     },{
-        "name": "2002",
-        "children":[{
-            "name": "matriculados",
+        "name": "2002 Matriculados",
             "value": 42415,
             "children": [{
                 "name": "concluintes",
@@ -33,11 +29,8 @@
                     "value": 9225
                 }]
             }]
-        }]
     },{
-        "name": "2003",
-        "children":[{
-            "name": "matriculados",
+        "name": "2003 Matriculados",
             "value": 48064,
             "children": [{
                 "name": "concluintes",
@@ -50,11 +43,8 @@
                     "value": 11437
                 }]
             }]
-        }]
     }, {
-        "name": "2004",
-        "children":[{
-            "name": "matriculados",
+        "name": "2004 Matriculados",
             "value": 54635,
             "children": [{
                 "name": "concluintes",
@@ -67,11 +57,8 @@
                     "value": 16574
                 }]
             }]
-        }]
     },{
-        "name": "2005",
-        "children":[{
-            "name": "matriculados",
+        "name": "2005 Matriculados",
             "value": 62682,
             "children": [{
                 "name": "concluintes",
@@ -84,11 +71,8 @@
                     "value": 21452
                 }]
             }]
-        }]
     }, {
-        "name": "2006",
-        "children":[{
-            "name": "matriculados",
+        "name": "2006 Matriculados",
             "value": 65551,
             "children": [{
                 "name": "concluintes",
@@ -101,11 +85,8 @@
                     "value": 23400
                 }]
             }]
-        }]
     }, {
-        "name": "2007",
-        "children":[{
-            "name": "matriculados",
+        "name": "2007 Matriculados",
             "value": 70632,
             "children": [{
                 "name": "concluintes",
@@ -118,11 +99,8 @@
                     "value": 26019
                 }]
             }]
-        }]
     }, {
-        "name": "2008",
-        "children":[{
-            "name": "matriculados",
+        "name": "2008 Matriculados",
             "value": 83167,
             "children": [{
                 "name": "concluintes",
@@ -135,11 +113,8 @@
                     "value": 28505
                 }]
             }]
-        }]
     }, {
-        "name": "2009",
-        "children":[{
-            "name": "matriculados",
+        "name": "2009 Matriculados",
             "value": 90364,
             "children": [{
                 "name": "concluintes",
@@ -152,11 +127,8 @@
                     "value": 36364
                 }]
             }]
-        }]
     }, {
-        "name": "2010",
-        "children":[{
-            "name": "matriculados",
+        "name": "2010 Matriculados",
             "value": 87357,
             "children": [{
                 "name": "concluintes",
@@ -169,11 +141,8 @@
                     "value": 34714
                 }]
             }]
-        }]
     }, {
-        "name": "2011",
-        "children":[{
-            "name": "matriculados",
+        "name": "2011 Matriculados",
             "value": 83180,
             "children": [{
                 "name": "concluintes",
@@ -186,11 +155,8 @@
                     "value": 33222
                 }]
             }]
-        }]
     }, {
-        "name": "2012",
-        "children":[{
-            "name": "matriculados",
+        "name": "2012 Matriculados",
             "value": 81197,
             "children": [{
                 "name": "concluintes",
@@ -203,11 +169,8 @@
                     "value": 33420
                 }]
             }]
-        }]
     }, {
-        "name": "2013",
-        "children":[{
-            "name": "matriculados",
+        "name": "2013 Matriculados",
             "value": 79094,
             "children": [{
                 "name": "concluintes",
@@ -220,11 +183,8 @@
                     "value": 31940
                 }]
             }]
-        }]
     }, {
-        "name": "2014",
-        "children":[{
-            "name": "matriculados",
+        "name": "2014 Matriculados",
             "value": 81980,
             "children": [{
                 "name": "concluintes",
@@ -237,11 +197,8 @@
                     "value": 32938
                 }]
             }]
-        }]
     }, {
-        "name": "2015",
-        "children":[{
-            "name": "matriculados",
+        "name": "2015 Matriculados",
             "value": 81749,
             "children": [{
                 "name": "concluintes",
@@ -254,11 +211,8 @@
                     "value": 34828
                 }]
             }]
-        }]
     }, {
-        "name": "2016",
-        "children":[{
-            "name": "matriculados",
+        "name": "2016 Matriculados",
             "value": 79921,
             "children": [{
                 "name": "concluintes",
@@ -271,11 +225,8 @@
                     "value": 35508
                 }]
             }]
-        }]
     }, {
-        "name": "2017",
-        "children":[{
-            "name": "matriculados",
+        "name": "2017 Matriculados",
             "value": 78615,
             "children": [{
                 "name": "concluintes",
@@ -289,5 +240,4 @@
                 }]
             }]
         }]
-    }]
 }
