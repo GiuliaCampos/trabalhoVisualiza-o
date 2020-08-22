@@ -5,7 +5,7 @@ import {
   Button
 } from '@material-ui/core'
 import './Home.css';
-//import {carregarDados} from './metodosBase'
+import {carregarDados} from './metodosBase'
 import * as d3 from 'd3';
 
 function Home(props) {
@@ -13,8 +13,8 @@ function Home(props) {
 
   useEffect(() => {
     async function loadData(){
-      // const aux = await carregarDados();
-      // setSbcData(aux);
+      const aux = await carregarDados();
+      setSbcData(aux);
     }
     loadData()
   }, []);
@@ -26,6 +26,7 @@ function Home(props) {
             <Grid item xs={12}>
                 <Typography variant="h3">A participação das mulheres na tecnologia</Typography>
                 <Button variant="contained" color="secondary" onClick={() => {props.history.push("/icicle")}}>Matriculados e concluíntes</Button>
+                <Button variant="contained" color="secondary" onClick={() => {props.history.push("/word-cloud")}}>As dificuldades Apontadas</Button>
             </Grid>
         </Grid> 
         </>
