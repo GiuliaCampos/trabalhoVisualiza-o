@@ -6,7 +6,6 @@ import {
 } from '@material-ui/core'
 import './Home.css';
 import {carregarDados} from './metodosBase'
-import * as d3 from 'd3';
 
 function Home(props) {
   const [sbcData, setSbcData] = useState([]);
