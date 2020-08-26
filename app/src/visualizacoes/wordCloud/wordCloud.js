@@ -3,7 +3,7 @@ import {
   Typography,
   Grid
 } from '@material-ui/core'
-import {carregarDados} from '../../metodosBase'
+import {carregarDadosWordCloud} from '../../metodosBase'
 import './wordCloud.css';
 import ReactWordcloud from 'react-wordcloud';
 
@@ -12,7 +12,7 @@ function BarChart() {
 
     useEffect(() => {
         async function tagCloud(){
-            const resultado = await carregarDados();
+            const resultado = await carregarDadosWordCloud();
 
             let data = [];
             const aux = resultado;

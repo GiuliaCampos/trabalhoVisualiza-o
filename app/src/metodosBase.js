@@ -6,20 +6,8 @@ import cursosCriados from './csv/cursosCriadosSBC.csv'
 import pesquisa from './csv/Pesquisa.csv'
 import * as d3 from 'd3';
 
-export async function carregarDados(){
+export async function carregarDadosWordCloud(){
     let data = [];
-
-    // let aux = [];
-    // await d3.csv(matriculadosGeneroCurso, function(d){
-    //     aux.push(d)
-    // });
-
-    //console.log(aux);
-
-    // let aux2 = [];
-    // await d3.csv(concluintesGeneroCurso, function(e){
-    //     aux2.push(e);
-    // });
 
     let aux3 = [
         "identifico",
@@ -391,10 +379,26 @@ export async function carregarDados(){
         let palavra = e.toUpperCase();
         data.push(palavra)
     })
+    return data;
+}
+
+export async function carregarDados(){
+    // let aux = [];
+    // await d3.csv(matriculadosGeneroCurso, function(d){
+    //     aux.push(d)
+    // });
+
+    //console.log(aux);
+
+    // let aux2 = [];
+    // await d3.csv(concluintesGeneroCurso, function(e){
+    //     aux2.push(e);
+    // });
+
     //console.log(data)
     //data = aux3;
 
-    let id = 0;
+ //   let id = 0;
 
     // aux.forEach(a1 => {
     //     aux2.forEach(a2 => {
@@ -466,5 +470,4 @@ export async function carregarDados(){
     // });
 
     //console.log(data);
-    return data;
 }
