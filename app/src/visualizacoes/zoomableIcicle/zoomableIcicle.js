@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {
   Typography,
   Grid
@@ -9,7 +9,7 @@ import * as d3 from 'd3';
 function ZoomableIcicle() {
   var width, height;
   const ref = useRef();
-  const [sbcData, setSbcData] = useState([]);
+  //const [sbcData, setSbcData] = useState([]);
 
   useEffect(() => {
     async function loadData(){
@@ -108,7 +108,7 @@ function ZoomableIcicle() {
 
   return (
     <>
-      <Grid  spacing={1} className="App-header">
+      <Grid container spacing={1} className="App-header">
         <Grid item xs={12}>
           <Typography variant="h3">Relação entre os matriculados e concluintes</Typography>
           <Typography variant="subtitle1">Clique nos elementos para aplicar o zoom.</Typography>

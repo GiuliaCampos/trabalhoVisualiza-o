@@ -13,20 +13,20 @@ function BarChart() {
     useEffect(() => {
         async function tagCloud(){
             const resultado = await carregarDadosWordCloud();
-
+            
             let data = [];
             const aux = resultado;
             resultado.forEach((p) => {
                 let valor = 0;
                 aux.forEach(d => {
-                    if(d == p) valor = valor + 1; //salvando o número de palavras
+                    if(d === p) valor = valor + 1; //salvando o número de palavras
                 });
 
                 let add = 0;
                 data.forEach(d => {
-                    if(d.text == p) {add = 1;} //verificando se já esta no data
+                    if(d.text === p) {add = 1;} //verificando se já esta no data
                 })
-                if(add == 0){ //senão estive add
+                if(add === 0){ //senão estive add
                     data.push({
                         text: p,
                         value: +valor
