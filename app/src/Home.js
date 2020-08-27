@@ -1,31 +1,32 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import {
   Typography,
   Grid,
   Button
 } from '@material-ui/core'
 import './Home.css';
-import {carregarDados} from './metodosBase'
+//import {carregarDados} from './metodosBase'
 
 function Home(props) {
-  const [sbcData, setSbcData] = useState([]);
+  //const [sbcData, setSbcData] = useState([]);
 
-  useEffect(() => {
-    async function loadData(){
-      const aux = await carregarDados();
-      setSbcData(aux);
-    }
-    loadData()
-  }, []);
+  // useEffect(() => {
+  //   async function loadData(){
+  //     const aux = await carregarDados();
+  //     setSbcData(aux);
+  //   }
+  //   loadData()
+  // }, []);
 
 
     return (
         <>
-        <Grid  spacing={1} className="App-header">
+        <Grid container spacing={1} className="App-header">
             <Grid item xs={12}>
                 <Typography variant="h3">A participação das mulheres na tecnologia</Typography>
                 <Button variant="contained" color="secondary" onClick={() => {props.history.push("/icicle")}}>Matriculados e concluíntes</Button>
                 <Button variant="contained" color="secondary" onClick={() => {props.history.push("/word-cloud")}}>As dificuldades Apontadas</Button>
+                <Button variant="contained" color="secondary" onClick={() => {props.history.push("/parallel-coordinates")}}>Onde estão as mulheres</Button>
             </Grid>
         </Grid> 
         </>

@@ -1,9 +1,9 @@
 import concluintesGeneroCurso from './csv/concluintesPorGeneroECursoSBC.csv'
-import concluintesGenero from './csv/concluintesPorGeneroSBC.csv'
-import matriculadosGenero from './csv/matriculadosPorGenerpSBC.csv'
+//import concluintesGenero from './csv/concluintesPorGeneroSBC.csv'
+//import matriculadosGenero from './csv/matriculadosPorGenerpSBC.csv'
 import matriculadosGeneroCurso from './csv/matriculadosPorGeneroECursoSBC.csv'
-import cursosCriados from './csv/cursosCriadosSBC.csv'
-import pesquisa from './csv/Pesquisa.csv'
+//import cursosCriados from './csv/cursosCriadosSBC.csv'
+//import pesquisa from './csv/Pesquisa.csv'
 import * as d3 from 'd3';
 
 export async function carregarDadosWordCloud(){
@@ -383,24 +383,61 @@ export async function carregarDadosWordCloud(){
 }
 
 export async function carregarDados(){
-    // let aux = [];
-    // await d3.csv(matriculadosGeneroCurso, function(d){
-    //     aux.push(d)
-    // });
+    let aux = [];
+    let data = [];
+
+    await d3.csv(matriculadosGeneroCurso, function(d){
+        aux.push(d)
+    });
 
     //console.log(aux);
 
-    // let aux2 = [];
-    // await d3.csv(concluintesGeneroCurso, function(e){
-    //     aux2.push(e);
-    // });
+    let aux2 = [];
+    await d3.csv(concluintesGeneroCurso, function(e){
+        aux2.push(e);
+    });
 
     //console.log(data)
     //data = aux3;
 
- //   let id = 0;
+    let id = 0;
+    const cursos = ["Ciência da Computação", "Engenharia da Computação", "Sistemas de Informação", "Licenciatura em Computação", "Outros", "Engenharia de Software"];
 
-    // aux.forEach(a1 => {
+    cursos.forEach(c => {
+        data.push({
+            id: id,
+            curso: c,
+            mulheresMat: 0,
+            homensMat: 0,
+            mulheresConc: 0,
+            homensConc: 0, 
+        });
+        id = id + 1;
+    })
+
+    aux.forEach(a1 => {
+        aux2.forEach(a2 => {
+            //console.log(a1.Curso + " e " + a2.curso)
+            if(a1.ano === a2.ano){
+                if(a1.curso === a2.curso){
+                    data.forEach(c => {
+                        if(c.curso === a1.curso){
+                            c.mulheresMat = c.mulheresMat + (+a1.fem)
+                            c.mulheresConc = c.mulheresConc + (+a2.fem)
+                            c.homensMat = c.homensMat + (+a1.mas)
+                            c.homensConc = c.homensConc + (+a2.mas)
+                        }
+                    })
+                }
+            }
+        });
+    });
+
+    //console.log(data);
+    return data;    
+}
+
+// aux.forEach(a1 => {
     //     aux2.forEach(a2 => {
     //         if(a1.curso === a2.curso){
     //             if(a1.ano === a2.ano){
@@ -428,46 +465,3 @@ export async function carregarDados(){
     //         }
     //     })
     // })
-
-    // aux.forEach(a1 => {
-    //     aux2.forEach(a2 => {
-    //         if(a1.ano === a2.ano){
-    //             data.push({
-    //                 "name": +a1.ano,
-    //                 "children": [{
-    //                     "name": "matriculados",
-    //                     "value": (+a2.fem)+ (+a1.mas),
-    //                     "children": [{
-    //                         "name": "concluintes",
-    //                         "children": [
-    //                             {"name": "Mulheres", "value": +a1.fem},
-    //                             {"name": "Homens", "value": a1.mas},
-    //                         ]
-    //                     }]
-    //                 }],
-    //             })
-    //         }
-    //     })
-    // })
-
-    // aux.forEach(a1 => {
-    //     aux2.forEach(a2 => {
-    //         //console.log(a1.Curso + " e " + a2.curso)
-    //         if(a1.Curso === a2.curso){
-    //             if(a1.ano === a2.ano){
-    //                 data.push({
-    //                     id: id,
-    //                     ano: +a1.ano,
-    //                     curso: a2.curso,
-    //                     mulheres: +a1.fem,
-    //                     homens: +a1.mas,
-    //                     criados: +a2.num
-    //                 });
-    //                 id = id+1;
-    //             }
-    //         }
-    //     });
-    // });
-
-    //console.log(data);
-}
