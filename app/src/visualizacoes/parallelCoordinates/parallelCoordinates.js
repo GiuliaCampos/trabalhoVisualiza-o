@@ -18,8 +18,8 @@ function ParallelCoordinates(){
             //setData(await carregarDados());
             
             var margin = {top: 30, right: 50, bottom: 10, left: 50},
-                width = 1200 - margin.left - margin.right,
-                height = 1200 - margin.top - margin.bottom;
+                width = 800 - margin.left - margin.right,
+                height = 700 - margin.top - margin.bottom;
 
             var svg = d3.select(ref.current)
             .append("svg")
@@ -30,9 +30,9 @@ function ParallelCoordinates(){
 
             var color = d3.scaleOrdinal()
             .domain(["Ciência da Computação", "Engenharia da Computação", "Sistemas de Informação", "Licenciatura em Computação", "Outros", "Engenharia de Software"])
-            .range(['#66006D','#AB1066','#DC4658', '#4444A3', '#FFBC4E', '#F9F871']);
+            .range(['#66006D','#DC1C71','#FF0006', '#02CFF5', '#FFBC4E', '#F9F871']);
 
-            const dimensions = [ "mulheresMat", "mulheresConc", "homensMat", "homensConc"];
+            const dimensions = [ "mulheresMat", "mulheresConc", "homensConc","homensMat"];
 
             let y = {};
 
@@ -45,13 +45,13 @@ function ParallelCoordinates(){
             var maiorHomensConc = d3.max(data, function(d){return d.homensConc});
             var menorHomensConc = d3.min(data, function(d){return d.homensConc});
 
-            y["mulheresMat"] = d3.scaleLinear().domain([2000, 100000]).range([height, 0]).nice();
+            y["mulheresMat"] = d3.scaleLinear().domain([2000, 50000]).range([height, 0]).nice();
                 
-            y["mulheresConc"] = d3.scaleLinear().domain([2000, 100000]).range([height, 0]).nice();
+            y["mulheresConc"] = d3.scaleLinear().domain([2000, 50000]).range([height, 0]).nice();
 
-            y["homensMat"] = d3.scaleLinear().domain([2000, 100000]).range([height, 0]).nice();
+            y["homensMat"] = d3.scaleLinear().domain([2000, 200000]).range([height, 0]).nice();
 
-            y["homensConc"] = d3.scaleLinear().domain([2000, 100000]).range([height, 0]).nice();
+            y["homensConc"] = d3.scaleLinear().domain([2000, 200000]).range([height, 0]).nice();
 
             let x = d3.scalePoint().range([0, width]).domain(dimensions);
 
@@ -97,7 +97,7 @@ function ParallelCoordinates(){
                 Vermelho: Sistemas de Informação, Azul: Licenciatura em Computação
                 Laranja: Outros, Amarelo: Engenharia de Software
             </Typography>
-            <svg style={{width: 1200, height: 1200}} ref={ref} />
+            <svg style={{width: 1200, height: 1400}} ref={ref} />
         </Grid>
     </Grid>
     )
